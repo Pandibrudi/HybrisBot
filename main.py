@@ -18,7 +18,11 @@ with open("C:/Users/Fabia/Documents/Coding/Hybris Bot/deeds.txt", "r", encoding=
         lines.remove(hybris_set[0]) #die Einträge werden aus der Liste des .txt-Dokuments entfernt, 
         lines.remove(hybris_set[1]) #damit es in nicht zu Dopplungen kommt
 
-        # 
+        # Nun werden die beiden Teile des Sets zu einer Phrase verbunden
+        # Die Phrase beginnt zunächst mit dem Wort "Menschen", 
+        # gefolgt vom ersten Teil des Hybris-Sets, einem " aber ", dem zweiten Teil des Sets und einem Punkt.
+        # der .strip("\n") entfernt den Zeilenumbruch, sodass am Ende alles in einer Zeile steht
         phrase = "Menschen " + hybris_set[0].strip("\n") + " aber " + hybris_set[1].strip("\n") + "."
 
+        #die Phrase wird in der Konsole ausgegeben
         print(phrase)

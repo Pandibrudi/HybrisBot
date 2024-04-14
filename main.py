@@ -12,7 +12,6 @@ with open("C:/Users/Fabia/Documents/Coding/Hybris Bot/deeds.txt", "r", encoding=
 
     # Es erfolgen i Iterationen, wobei i die Länge der Liste geteilt durch 2 ist
     # da immer exakt 2 Einträge verwendet werden
-    # aus diesem Grund sollte sich immer eine gerade Anzahl an Einträgen in der Liste befinden
     for i in range(int(len(lines)/2)): 
         hybris_set = random.sample(lines, 2) #Ein zufälliges sample aus zwei sich nicht doppelnden Einträgen wird gewählt
         lines.remove(hybris_set[0]) #die Einträge werden aus der Liste des .txt-Dokuments entfernt, 
